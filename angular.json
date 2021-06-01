@@ -17,6 +17,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "auth0-lock",
+              "util",
+              "process"
+            ],
             "outputPath": "dist/test-auth0-lock",
             "index": "src/index.html",
             "main": "src/main.ts",
